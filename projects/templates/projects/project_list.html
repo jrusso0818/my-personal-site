@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_content %}
+        {% for project in projects %}
+            <img src='{% static project.image %}' alt='' width='100%'>
+        {% endfor %}
+{% endblock %}
