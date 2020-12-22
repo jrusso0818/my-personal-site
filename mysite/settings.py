@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'projects.apps.ProjectsConfig',
     'homepage.apps.HomepageConfig',
+    'about.apps.AboutConfig',
 ]
 
 MIDDLEWARE = [
