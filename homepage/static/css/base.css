@@ -12,3 +12,20 @@ nav {
     border-bottom-color: black;
     border-bottom-width: 2px;
 }
+
+.navbar-brand {
+  color:black;
+}
+
+.nav-link {
+    color: #505050;
+}
+
+.nav-link:hover {
+    color: gray;
+  }
+
+.active a {
+  text-decoration: underline;
+  color: #4484CE;
+}
