@@ -17,6 +17,10 @@ nav {
   color:black;
 }
 
+.navbar-brand:hover {
+    color: black;
+}
+
 .nav-link {
     color: #505050;
 }
