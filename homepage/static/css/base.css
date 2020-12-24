@@ -4,5 +4,11 @@
 }
 
 body {
-  background-color: #EAE6DF;
+  background-color: white;
+}
+
+nav {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
 }
