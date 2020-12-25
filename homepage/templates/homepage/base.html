@@ -13,24 +13,8 @@
 
         <nav class="navbar navbar-expand-md sticky-top" style="background:white">
 
-          <div class="navbar-collapse collapse w-100 order-2 dual-collapse2" id="navbarSupportedContent">
-              <ul class="navbar-nav d-flex flex-row ml-auto pr-5" style="order:99">
-                  <li class="nav-item px-2">
-                      <a class="nav-link" href="#">
-                          <i class="fa fa-linkedin-square"></i>
-                      </a>
-                  </li>
-                  <li class="nav-item px-2">
-                      <a class="nav-link" href="https://github.com/jrusso0818">
-                          <i class="fa fa-github-square"></i>
-                      </a>
-                  </li>
-              </ul>
-          </div>
 
-
-
-          <a class="navbar-brand mx-auto pl-5 pt-3 pr-5" href="{% url 'homepage' %}">
+          <a class="navbar-brand mx-auto pl-5 pr-5 pt-3" href="{% url 'homepage' %}">
               <h4><strong>Jordan Russo</strong></h4>
           </a>
 
@@ -49,6 +33,21 @@
                     </li>
                     <li class="nav-item px-3">
                         <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-collapse collapse w-100 order-2 dual-collapse2" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex flex-row ml-auto mr-5">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="https://github.com/jrusso0818">
+                            <i class="fa fa-github-square"></i>
+                        </a>
                     </li>
                 </ul>
             </div>

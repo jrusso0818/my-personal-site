@@ -22,7 +22,7 @@ nav {
 }
 
 .nav-link {
-    color: #505050;
+    color: #303030;
 }
 
 .nav-link:hover {
@@ -34,6 +34,10 @@ nav {
     color: #4484CE;
 }
 
+
+div.order-1 > ul > li > a {
+    font-size: 17px;
+}
 
 
 
