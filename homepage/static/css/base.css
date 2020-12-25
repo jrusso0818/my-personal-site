@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: white;
+    background-color: white;
 }
 
 nav {
@@ -14,7 +14,7 @@ nav {
 }
 
 .navbar-brand {
-  color:black;
+    color:black;
 }
 
 .navbar-brand:hover {
@@ -29,7 +29,32 @@ nav {
     color: gray;
   }
 
-.active a {
-  text-decoration: underline;
-  color: #4484CE;
+.active > a {
+    text-decoration: underline;
+    color: #4484CE;
+}
+
+
+
+
+
+ ul.social-icons {
+    list-style-type: none;
+}
+
+.fa {
+    font-size: 48px;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: grey;
+}
+
+.fa-linkedin-square {
+    color: #0E76A8;
+}
+
+.fa-github-square {
+    color: black;
 }
