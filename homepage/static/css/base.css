@@ -42,23 +42,39 @@ div.order-1 > ul > li > a {
 
 
 
- ul.social-icons {
-    list-style-type: none;
-}
-
-.fa {
+.lg-icon .fa {
     font-size: 48px;
     text-decoration: none;
 }
 
-.fa:hover {
+.lg-icon .fa:hover {
     color: grey;
 }
 
-.fa-linkedin-square {
+.lg-icon .fa-linkedin-square {
     color: #0E76A8;
 }
 
-.fa-github-square {
+.lg-icon .fa-github-square {
+    color: black;
+}
+
+
+
+
+.sm-icon .fa {
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.sm-icon .fa:hover {
+    color: grey;
+}
+
+.sm-icon .fa-linkedin-square {
+    color: #0E76A8;
+}
+
+.sm-icon .fa-github-square {
     color: black;
 }
