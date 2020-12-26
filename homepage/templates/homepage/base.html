@@ -12,17 +12,20 @@
     <body>
 
         <nav class="navbar navbar-expand-md sticky-top" style="background:white">
-
-
-          <a class="navbar-brand mx-auto pl-5 pr-5 pt-3" href="{% url 'homepage' %}">
+          <!-- Brand name for screen size medium and up -->
+          <a class="navbar-brand mx-auto px-5 pt-3 d-none d-md-block" href="{% url 'homepage' %}">
+              <h4><strong>Jordan Russo</strong></h4>
+          </a>
+          <!-- Brand name for screen size smaller than medium -->
+          <a class="navbar-brand order-1 d-md-none" href="{% url 'homepage' %}">
               <h4><strong>Jordan Russo</strong></h4>
           </a>
 
-          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler navbar-light order-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
           </button>
 
-
+          <!-- nav-item links. No change for different screen sizes. -->
           <div class="navbar-collapse collapse w-100 order-1 dual-collapse2" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item px-3">
@@ -37,7 +40,8 @@
                 </ul>
             </div>
 
-            <div class="navbar-collapse collapse w-100 order-2 dual-collapse2" id="navbarSupportedContent">
+            <!-- Icons for screen size medium and up -->
+            <div class="navbar-collapse collapse w-100 order-2 dual-collapse2 d-none d-md-block" id="navbarSupportedContent">
                 <ul class="navbar-nav d-flex flex-row ml-auto mr-5">
                     <li class="nav-item px-3">
                         <a class="nav-link" href="#">
@@ -51,8 +55,22 @@
                     </li>
                 </ul>
             </div>
+            <!-- Icons for screen size smaller than medium screen size -->
+            <div class="navbar-brand order-0">
+                <ul class="navbar-nav d-flex flex-row d-md-none">
+                    <li class="nav-item pl-3">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item pl-3">
+                        <a class="nav-link" href="https://github.com/jrusso0818">
+                            <i class="fa fa-github-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
         <div class="block-content">
             {% block page_content %}
             {% endblock %}
