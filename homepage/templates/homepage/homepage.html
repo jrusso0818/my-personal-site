@@ -2,5 +2,18 @@
 {% load static %}
 
 {% block page_content %}
-<h1>Welcome!</h1>
+<div class="row">
+    <div class="col">
+        <div class="my-div">
+            <img src="static/img/me.jpeg" class="img-fluid" alt="Responsive image" style="opacity:0.6;">
+        </div>
+    </div>
+</div>
+
+<!-- Move to CSS stylesheet -->
+<style>
+    .my-div {
+      background-color: black;
+    }
+</style>
 {% endblock %}
