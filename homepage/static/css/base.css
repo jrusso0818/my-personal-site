@@ -76,7 +76,7 @@ div.order-1 > ul > li > a {
 
 
 
-.me-div img {
+.me-div > img {
   border-bottom-style: solid;
   border-bottom-color: black;
   border-bottom-width: 2px;
