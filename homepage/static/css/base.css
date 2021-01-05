@@ -76,6 +76,14 @@ div.order-1 > ul > li > a {
 
 
 
+.me-div img {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+}
+
+
+
 /*
 USEFUL INFO FOR ANIMATED CAPTION ON HOVER!!
 LOOK AT https://stackoverflow.com/questions/18322548/black-transparent-overlay-on-image-hover-with-only-css
