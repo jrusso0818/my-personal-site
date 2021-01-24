@@ -82,6 +82,25 @@ div.order-1 > ul > li > a {
   border-bottom-width: 2px;
 }
 
+.bush-text-top {
+  position: absolute;
+  top: 25%;
+  left: 16.32%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5vw;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Helvetica";
+}
+
+.bush-text-bottom {
+  position: absolute;
+  top: 36%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5vw;
+  color: rgba(255, 255, 255, 1);
+  font-family: sans-serif;
+}
 
 
 /*
