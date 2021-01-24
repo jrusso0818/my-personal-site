@@ -2,12 +2,14 @@
 {% load static %}
 
 {% block page_content %}
-<h1>{{ project.title }}</h1>
+<div class="px-3">
 <div class="row">
     <div class="col-md-7">
-        <img src="{{ project.image.url }}" alt="" width="100%">
+        <img src="{{ project.image.url }}" alt="" width="100%" style="border: 1px solid black">
     </div>
     <div class="col-md-4">
+        <br>
+        <h2>{{ project.title }}</h2>
         <br>
         <h5>About the project:</h5>
         <p>{{ project.description }}</p>
@@ -17,5 +19,6 @@
         <br>
         <a href="{% url 'project_list' %}" class='btn text-white' style="background:#4484CE">Back</a>
     </div>
+</div>
 </div>
 {% endblock %}
