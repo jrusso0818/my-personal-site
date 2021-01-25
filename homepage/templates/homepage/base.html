@@ -11,44 +11,59 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-md sticky-top" style="background:white">
+        <nav class="navbar navbar-expand-md sticky-top px-0 pb-0" style="background:white">
           <!-- Brand name for screen size medium and up -->
-          <a class="navbar-brand mx-auto px-5 pt-3 d-none d-md-block" href="{% url 'homepage' %}">
+          <a class="navbar-brand mx-auto px-5 pt-3 pb-3 d-none d-md-block" href="{% url 'homepage' %}">
               <h4><strong>Jordan Russo</strong></h4>
           </a>
           <!-- Brand name for screen size smaller than medium -->
           <a class="navbar-brand order-1 mx-0 d-md-none" href="{% url 'homepage' %}">
               <h4><strong>Jordan Russo</strong></h4>
           </a>
-
-          <button class="navbar-toggler navbar-light order-1 px-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="pr-4 order-1">
+          <button class="navbar-toggler navbar-light order-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
           </button>
+        </div>
 
-          <!-- nav-item links. No change for different screen sizes. -->
+          <!-- nav-item links -->
           <div class="navbar-collapse collapse w-100 order-1 dual-collapse2" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item px-3">
+                  <!---->
+                    <li class="nav-item pr-3 pl-0 d-none d-md-block">
                         <a class="nav-link" href="{% url 'homepage' %}">Home</a>
                     </li>
-                    <li class="nav-item px-3">
+                    <li class="nav-item px-3 d-none d-md-block">
                         <a class="nav-link" href="{% url 'project_list' %}">Projects</a>
                     </li>
-                    <li class="nav-item px-3">
+                    <li class="nav-item px-3 d-none d-md-block">
                         <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
+
+                  <!---->
+                    <li class="nav-item d-flex justify-content-center d-md-none" style="border-top: 1px solid grey;">
+                        <a class="nav-link" href="{% url 'homepage' %}">Home</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center d-md-none">
+                        <a class="nav-link" href="{% url 'project_list' %}">Projects</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center d-md-none">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+
+
+
                 </ul>
             </div>
-
             <!-- Icons for screen size medium and up -->
             <div class="navbar-collapse collapse w-100 order-2 dual-collapse2 d-none d-md-block" id="navbarSupportedContent">
                 <ul class="navbar-nav d-flex flex-row ml-auto mr-5 lg-icon">
-                    <li class="nav-item px-3">
+                    <li class="nav-item px-2 pb-1">
                         <a class="nav-link" href="#">
                             <i class="fa fa-linkedin-square"></i>
                         </a>
                     </li>
-                    <li class="nav-item px-3">
+                    <li class="nav-item px-3 pb-1">
                         <a class="nav-link" href="https://github.com/jrusso0818">
                             <i class="fa fa-github-square"></i>
                         </a>
@@ -56,7 +71,7 @@
                 </ul>
             </div>
             <!-- Icons for screen size smaller than medium screen size -->
-            <div class="navbar-brand order-0 mr-1">
+            <div class="navbar-brand order-0 mr-1 pl-3">
                 <ul class="navbar-nav d-flex flex-row d-md-none sm-icon">
                     <li class="nav-item pl-0">
                         <a class="nav-link" href="#">
